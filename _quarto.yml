@@ -2,16 +2,31 @@ project:
   type: website
 
 website:
-  title: "In_Class"
+  title: "VAA In-Class"
   navbar:
     left:
+      - href: Inclass1.qmd
+        text: One
+      - href: Inclass2.qmd
+        text: Two 
+      - href: Inclass3.qmd
+        text: Three
+      - href: Inclass4.qmd
+        text: Four   
+      - href: Inclass5.qmd
+        text: Five
+      - href: Inclass6.qmd
+        text: Six        
+      - href: Inclass7.qmd
+        text: Seven
+      - href: Inclass8.qmd
+        text: Eight       
       - href: index.qmd
-        text: Home
-      - about.qmd
-
+        text: Return Home
+        
 format:
   html:
-    theme: cosmo
+    theme: simplex
     css: styles.css
     toc: true
 

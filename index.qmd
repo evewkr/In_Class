@@ -1,11 +1,21 @@
 ---
-title: "In_Class"
+title: "Visual Analytics"
+output:
+  xaringan::moon_reader:
+    css: [xaringan-themer.css, "css/text.css"]
+    lib_dir: libs
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "js/macros.js"
 ---
 
-This is a Quarto website.
+# About This Course
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Visual Analytics and Applications (ISSS608) is part of the programme at Masters of IT in Business (Analytics Track). The goals of this course are:
 
-```{r}
-1 + 1
-```
+-   To share with you the principles, best practices and methods of visual analytics
+
+-   To provide you hands-on experiences in using commercial-off-the-shelf visual analytics software and programming tools to design visual analytics applications
