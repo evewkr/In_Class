@@ -8,13 +8,14 @@
     <AutoCreateAndUpdateDSDPhoneLayouts />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SetMembershipControl />
     <SheetIdentifierTracking />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
-  <repository-location id='Handson1-Histo' path='/workbooks' revision='1.0' />
+  <repository-location id='Handson1-Trellis' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -29,7 +30,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Exam_data' name='textscan.15u8ntp1co920k1eqojdt1mijwmu'>
-            <connection class='textscan' directory='/Users/oliviaw/Documents/evewkr/In_Class/data/1' filename='Exam_data.csv' password='' server='' />
+            <connection class='textscan' directory='/Users/oliviaw/Documents/evewkr/In_Class/data/1' filename='Exam_data.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.15u8ntp1co920k1eqojdt1mijwmu' name='Exam_data.csv' table='[Exam_data#csv]' type='table'>
@@ -54,6 +55,7 @@
             <column datatype='integer' name='SCIENCE' ordinal='6' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -190,6 +192,109 @@
       <column-instance column='[ENGLISH]' derivation='Sum' name='[sum:ENGLISH:qk]' pivot='key' type='quantitative' />
       <column-instance column='[MATHS]' derivation='Sum' name='[sum:MATHS:qk]' pivot='key' type='quantitative' />
       <column-instance column='[SCIENCE]' derivation='Sum' name='[sum:SCIENCE:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/oliviaw/Documents/My Tableau Repository/Datasources/Exam_data.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Exam_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>322</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CLASS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CLASS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CLASS</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Exam_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GENDER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GENDER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GENDER</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Exam_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RACE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RACE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RACE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Exam_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ENGLISH</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ENGLISH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ENGLISH</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Exam_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MATHS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MATHS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MATHS</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Exam_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>80</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SCIENCE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SCIENCE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SCIENCE</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Exam_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>72</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -248,6 +353,9 @@
                   <column datatype='integer' name='SCIENCE' ordinal='6' />
                 </columns>
               </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -511,8 +619,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98000' id='9' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Trellis' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
