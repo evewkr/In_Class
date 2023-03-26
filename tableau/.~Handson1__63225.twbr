@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0209.1653                               -->
+<workbook original-version='18.1' source-build='2022.4.1 (20224.23.0209.1653)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='Handson1-Histo' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Exam_data' inline='true' name='federated.1kaswzl0c1fea31enuv2u0t3e96o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Exam_data' name='textscan.15u8ntp1co920k1eqojdt1mijwmu'>
+            <connection class='textscan' directory='/Users/oliviaw/Documents/evewkr/In_Class/data/1' filename='Exam_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.15u8ntp1co920k1eqojdt1mijwmu' name='Exam_data.csv' table='[Exam_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+            <column datatype='string' name='ID' ordinal='0' />
+            <column datatype='string' name='CLASS' ordinal='1' />
+            <column datatype='string' name='GENDER' ordinal='2' />
+            <column datatype='string' name='RACE' ordinal='3' />
+            <column datatype='integer' name='ENGLISH' ordinal='4' />
+            <column datatype='integer' name='MATHS' ordinal='5' />
+            <column datatype='integer' name='SCIENCE' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.15u8ntp1co920k1eqojdt1mijwmu' name='Exam_data.csv' table='[Exam_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+            <column datatype='string' name='ID' ordinal='0' />
+            <column datatype='string' name='CLASS' ordinal='1' />
+            <column datatype='string' name='GENDER' ordinal='2' />
+            <column datatype='string' name='RACE' ordinal='3' />
+            <column datatype='integer' name='ENGLISH' ordinal='4' />
+            <column datatype='integer' name='MATHS' ordinal='5' />
+            <column datatype='integer' name='SCIENCE' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_SG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CLASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CLASS]</local-name>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias>CLASS</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GENDER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GENDER]</local-name>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias>GENDER</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RACE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RACE]</local-name>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias>RACE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENGLISH</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ENGLISH]</local-name>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias>ENGLISH</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MATHS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MATHS]</local-name>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias>MATHS</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCIENCE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SCIENCE]</local-name>
+            <parent-name>[Exam_data.csv]</parent-name>
+            <remote-alias>SCIENCE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Class' datatype='string' name='[CLASS]' role='dimension' type='nominal' />
+      <column caption='Count of English scores across Genders' datatype='integer' name='[Calculation_4449063859328274433]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{Fixed [English (bin)] :COUNT([ENGLISH])}' />
+      </column>
+      <column caption='English' datatype='integer' name='[ENGLISH]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[English (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[ENGLISH]' peg='0' size='5.39' />
+      </column>
+      <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
+      <column caption='Maths' datatype='integer' name='[MATHS]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='string' name='[RACE]' role='dimension' type='nominal' />
+      <column caption='Science' datatype='integer' name='[SCIENCE]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Exam_data.csv' datatype='table' name='[__tableau_internal_object_id__].[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ENGLISH]' derivation='Count' name='[cnt:ENGLISH:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ENGLISH]' derivation='None' name='[none:ENGLISH:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_4449063859328274433]' derivation='Sum' name='[sum:Calculation_4449063859328274433:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ENGLISH]' derivation='Sum' name='[sum:ENGLISH:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MATHS]' derivation='Sum' name='[sum:MATHS:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCIENCE]' derivation='Sum' name='[sum:SCIENCE:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='nuriel_stone_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:SCIENCE:qk]&quot;</bucket>
+            </map>
+            <map to='#6fb899'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:Calculation_4449063859328274433:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:MATHS:qk]&quot;</bucket>
+            </map>
+            <map to='#8175aa'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:Calculation_4353221629744414731:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[__tableau_internal_object_id__].[cnt:Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:Calculation_4353221629744271367:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:Calculation_4353221629744328713:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:ENGLISH:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:Calculation_4353221629744353290:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:ENGLISH:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Exam_data.csv' id='Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824'>
+            <properties context=''>
+              <relation connection='textscan.15u8ntp1co920k1eqojdt1mijwmu' name='Exam_data.csv' table='[Exam_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+                  <column datatype='string' name='ID' ordinal='0' />
+                  <column datatype='string' name='CLASS' ordinal='1' />
+                  <column datatype='string' name='GENDER' ordinal='2' />
+                  <column datatype='string' name='RACE' ordinal='3' />
+                  <column datatype='integer' name='ENGLISH' ordinal='4' />
+                  <column datatype='integer' name='MATHS' ordinal='5' />
+                  <column datatype='integer' name='SCIENCE' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Histogram with comparative plots</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Exam_data' name='federated.1kaswzl0c1fea31enuv2u0t3e96o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kaswzl0c1fea31enuv2u0t3e96o'>
+            <column caption='Count of English scores across Genders' datatype='integer' name='[Calculation_4449063859328274433]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{Fixed [English (bin)] :COUNT([ENGLISH])}' />
+            </column>
+            <column caption='English' datatype='integer' name='[ENGLISH]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[English (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[ENGLISH]' peg='0' size='5.39' />
+            </column>
+            <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
+            <column-instance column='[ENGLISH]' derivation='Count' name='[cnt:ENGLISH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[English (bin)]' derivation='None' name='[none:English (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GENDER]' derivation='None' name='[none:GENDER:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_4449063859328274433]' derivation='Sum' name='[sum:Calculation_4449063859328274433:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]' field-type='quantitative' max='60' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]' scope='rows' value='Count' />
+            <format attr='title' class='0' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:English (bin):qk]' scope='cols' value='ENGLISH' />
+            <format attr='display' class='0' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]' scope='rows' value='true' />
+            <encoding attr='space' class='0' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:Calculation_4449063859328274433:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:GENDER:nk]' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <lod column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]' />
+              <color column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <lod column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]' />
+              <color column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:Calculation_4449063859328274433:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <lod column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk]' />
+              <color column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='22' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1kaswzl0c1fea31enuv2u0t3e96o].[cnt:ENGLISH:qk] + [federated.1kaswzl0c1fea31enuv2u0t3e96o].[sum:Calculation_4449063859328274433:qk])</rows>
+        <cols>([federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:GENDER:nk] * [federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:English (bin):qk])</cols>
+        <show-full-range>
+          <column>[federated.1kaswzl0c1fea31enuv2u0t3e96o].[English (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7058C10E-05F7-483D-876C-D4D44581FC87}' />
+    </worksheet>
+    <worksheet name='Scatter'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Scatterplot with reference lines</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Exam_data' name='federated.1kaswzl0c1fea31enuv2u0t3e96o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kaswzl0c1fea31enuv2u0t3e96o'>
+            <column caption='English' datatype='integer' name='[ENGLISH]' role='measure' type='quantitative' />
+            <column caption='Maths' datatype='integer' name='[MATHS]' role='measure' type='quantitative' />
+            <column-instance column='[ENGLISH]' derivation='None' name='[none:ENGLISH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MATHS]' derivation='None' name='[none:MATHS:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:MATHS:qk]' field-type='quantitative' max='100' min='0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:ENGLISH:qk]' field-type='quantitative' max='100' min='0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dotted' />
+            <format attr='stroke-color' id='refline0' value='#c0c0c04b' />
+            <format attr='fill-above' id='refline1' value='#00000000' />
+            <format attr='fill-below' id='refline1' value='#00000000' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='dotted' />
+            <format attr='stroke-color' id='refline1' value='#d4d4d44b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <reference-line axis-column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:MATHS:qk]' enable-instant-analytics='true' formula='constant' id='refline0' label-type='automatic' scope='per-table' value='50' value-column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:MATHS:qk]' z-order='1' />
+            <reference-line axis-column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:ENGLISH:qk]' enable-instant-analytics='true' formula='constant' id='refline1' label-type='automatic' scope='per-table' value='50' value-column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:ENGLISH:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.36182320117950439' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:ENGLISH:qk]</rows>
+        <cols>[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:MATHS:qk]</cols>
+      </table>
+      <simple-id uuid='{3DC90DFC-DF3A-469F-AEEC-2DD29BF45137}' />
+    </worksheet>
+    <worksheet name='Trellis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Trellis Boxplot</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Exam_data' name='federated.1kaswzl0c1fea31enuv2u0t3e96o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kaswzl0c1fea31enuv2u0t3e96o'>
+            <column caption='Class' datatype='string' name='[CLASS]' role='dimension' type='nominal' />
+            <column caption='Count of English scores across Genders' datatype='integer' name='[Calculation_4449063859328274433]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{Fixed [English (bin)] :COUNT([ENGLISH])}' />
+            </column>
+            <column caption='English' datatype='integer' name='[ENGLISH]' role='measure' type='quantitative' />
+            <column aggregation='None' datatype='integer' name='[English (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[ENGLISH]' peg='0' size='5.39' />
+            </column>
+            <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
+            <column caption='Maths' datatype='integer' name='[MATHS]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='Exam_data.csv' datatype='integer' name='[__tableau_internal_object_id__].[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]' role='measure' type='quantitative' />
+            <column caption='Science' datatype='integer' name='[SCIENCE]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='Exam_data.csv' datatype='table' name='[__tableau_internal_object_id__].[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Exam_data.csv_8D146AC8517446DEA8E2F44F9C1D0824:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[CLASS]' derivation='None' name='[none:CLASS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[GENDER]' derivation='None' name='[none:GENDER:nk]' pivot='key' type='nominal' />
+            <column-instance column='[MATHS]' derivation='None' name='[none:MATHS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_4449063859328274433]' derivation='Sum' name='[sum:Calculation_4449063859328274433:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ENGLISH]' derivation='Sum' name='[sum:ENGLISH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MATHS]' derivation='Sum' name='[sum:MATHS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SCIENCE]' derivation='Sum' name='[sum:SCIENCE:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:GENDER:nk]' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <size column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[Multiple Values]' />
+              <color column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[:Measure Names]' />
+            </encodings>
+            <reference-line axis-column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:MATHS:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='minmax' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:MATHS:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.097955800592899323' />
+                <format attr='mark-color' value='#75a1c7' />
+                <format attr='mark-transparency' value='124' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:GENDER:nk] * [federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:MATHS:qk])</rows>
+        <cols>[federated.1kaswzl0c1fea31enuv2u0t3e96o].[none:CLASS:nk]</cols>
+      </table>
+      <simple-id uuid='{04642081-9FE7-45F6-845C-73AB5A00F087}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Trellis' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='9' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Trellis' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{84E2A871-52D6-4DF4-A45B-4FBE7102E1C9}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Trellis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[:Measure Names]' type='color' />
+            <card pane-specification-id='0' param='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[Multiple Values]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{12B99C84-C1E8-4654-A9E1-75BEDA645424}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.1kaswzl0c1fea31enuv2u0t3e96o].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{9E805F78-DC22-48A9-BB32-4318C95B27B1}' />
+    </window>
+    <window class='worksheet' name='Scatter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AB4A8E0F-BFFF-4F91-A136-FB37BEC100D9}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Trellis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{9D5F7121-657E-4F7F-BF84-A001E2548E1F}' />
+    </window>
+  </windows>
+</workbook>
