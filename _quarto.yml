@@ -21,6 +21,10 @@ website:
         text: Seven
       - href: Inclass8.qmd
         text: Eight       
+      - href: Inclass9.qmd
+        text: Nine
+      - href: Inclass10.qmd
+        text: Ten               
       - href: index.qmd
         text: Return Home
         
