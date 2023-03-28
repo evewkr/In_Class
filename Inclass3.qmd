@@ -1,0 +1,43 @@
+---
+title: "In class Exercise 3 - Interactive Data Visualisation"
+---
+
+```{r, include=FALSE}
+library(pacman)
+pacman::p_load(plotly,tidyverse,patchwork,ggthemes,hrbrthemes,ggrepel,readr)
+exam_data <- read_csv("data/3/exam_data.csv")
+```
+
+Plotting of exam_data dataset, below:
+
+```{r, echo=FALSE}
+head(exam_data)
+```
+
+1.  Scatterplot of Maths against English with hover effects. Colours represent class
+
+```{r,message=FALSE}
+p1 <- plot_ly(data = exam_data, 
+             x = ~MATHS, 
+             y = ~ENGLISH,
+        color=~CLASS,
+        coord_cartesian(xlim=c(0,100),
+                        ylim=c(0,100)))
+```
+
+2.  Scatterplot of Maths against Science with hover effects. Colours represent class.
+
+```{r,message=FALSE}
+p2 <- plot_ly(data = exam_data, 
+             x = ~MATHS, 
+             y = ~SCIENCE,
+        color=~CLASS,
+        coord_cartesian(xlim=c(0,100),
+                        ylim=c(0,100)))
+```
+
+3.  Bringing it all together (side by side); Also split the table into 4 quadrants for better visualisation and analysis.
+
+```{r, message=FALSE}
+ggplotly(p1)
+```
