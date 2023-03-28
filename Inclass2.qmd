@@ -1,5 +1,5 @@
 ---
-title: "In class Exercise 7 - Visualising and Analysing Geographic Data"
+title: "In class Exercise 2 - Beyond Plotting Fundamentals"
 ---
 
 ```{r, include=FALSE}
@@ -8,7 +8,15 @@ pacman::p_load(tidyverse,patchwork,ggthemes,hrbrthemes,ggrepel)
 exam_data <- read_csv("data/2/exam_data.csv")
 ```
 
-```{r, include=FALSE}
+Plotting of exam_data dataset, below:
+
+```{r, echo=FALSE}
+head(exam_data)
+```
+
+1.  Histogram plot for Maths scores
+
+```{r,message=FALSE}
 p1 <- ggplot(data=exam_data, 
              aes(x = MATHS)) +
   geom_histogram(bins=20, 
@@ -19,7 +27,9 @@ p1 <- ggplot(data=exam_data,
   ggtitle("Distribution of Maths scores")
 ```
 
-```{r}
+2.  Histogram plot for English scores
+
+```{r,message=FALSE}
 p2 <- ggplot(data=exam_data, 
              aes(x = ENGLISH)) +
   geom_histogram(bins=20, 
@@ -31,7 +41,9 @@ p2 <- ggplot(data=exam_data,
   
 ```
 
-```{r}
+3.  Scatter plot of English vs Maths scores
+
+```{r, message=FALSE}
 p3 <- ggplot(data=exam_data, 
              aes(x= MATHS, 
                  y=ENGLISH)) +
@@ -42,4 +54,11 @@ p3 <- ggplot(data=exam_data,
                   ylim=c(0,100)) +
   ggtitle("English scores versus Maths scores for Primary 3")
 
+```
+
+4.  Bringing it all together - with an economist theme!
+
+```{r,message=FALSE}
+patchwork <- (p1 / p2) | p3
+patchwork & theme_economist()
 ```
