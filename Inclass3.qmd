@@ -20,9 +20,7 @@ head(exam_data)
 p1 <- plot_ly(data = exam_data, 
              x = ~MATHS, 
              y = ~ENGLISH,
-        color=~CLASS,
-        coord_cartesian(xlim=c(0,100),
-                        ylim=c(0,100)))
+        color=~CLASS) 
 ```
 
 2.  Scatterplot of Maths against Science with hover effects. Colours represent class.
@@ -31,13 +29,13 @@ p1 <- plot_ly(data = exam_data,
 p2 <- plot_ly(data = exam_data, 
              x = ~MATHS, 
              y = ~SCIENCE,
-        color=~CLASS,
-        coord_cartesian(xlim=c(0,100),
-                        ylim=c(0,100)))
+        color=~CLASS)
 ```
 
-3.  Bringing it all together (side by side); Also split the table into 4 quadrants for better visualisation and analysis.
+3.  Bringing it all together (side by side)
 
-```{r, message=FALSE}
-ggplotly(p1)
+
+```{r,message=FALSE,warning=FALSE}
+subplot(ggplotly(p1),ggplotly(p2))
 ```
+
