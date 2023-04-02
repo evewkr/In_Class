@@ -9,7 +9,9 @@ library(pacman)
 pacman::p_load(ggstatsplot,readr,tidyverse,patchwork,ggthemes,hrbrthemes,ggrepel)
 exam <- read_csv("data/4/Exam_data.csv")
 ```
+
 ## Inferential Stats
+
 Violin Plot below will compare English scores between class 3E - 3H
 
 ```{r}
