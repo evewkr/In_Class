@@ -1,0 +1,24 @@
+---
+title: "Inclass4"
+format: html
+editor: visual
+---
+
+```{r, include=FALSE}
+library(pacman)
+pacman::p_load(ggstatsplot,readr,tidyverse,patchwork,ggthemes,hrbrthemes,ggrepel)
+exam <- read_csv("data/4/Exam_data.csv")
+```
+## Inferential Stats
+Violin Plot below will compare English scores between class 3E - 3H
+
+```{r}
+exam_plot <- exam %>%
+  filter(CLASS %in% c("3E","3F","3G","3H"))
+
+
+    ggbetweenstats(data = exam, 
+                   x = CLASS, y = ENGLISH, type = "p",
+                   mean.ci = TRUE, pairwise.comparisons = TRUE, pairwise.display = "s",
+                   p.adjust.method = "fdr", messages = FALSE)
+```

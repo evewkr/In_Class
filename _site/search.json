@@ -47,5 +47,19 @@
     "title": "In class Exercise 3 - Interactive Data Visualisation",
     "section": "",
     "text": "Plotting of exam_data dataset, below:\n\n\n# A tibble: 6 × 7\n  ID         CLASS GENDER RACE    ENGLISH MATHS SCIENCE\n  <chr>      <chr> <chr>  <chr>     <dbl> <dbl>   <dbl>\n1 Student321 3I    Male   Malay        21     9      15\n2 Student305 3I    Female Malay        24    22      16\n3 Student289 3H    Male   Chinese      26    16      16\n4 Student227 3F    Male   Chinese      27    77      31\n5 Student318 3I    Male   Malay        27    11      25\n6 Student306 3I    Female Malay        31    16      16\n\n\n\nScatterplot of Maths against English with hover effects. Colours represent class\n\n\np1 <- plot_ly(data = exam_data, \n             x = ~MATHS, \n             y = ~ENGLISH,\n        color=~CLASS) \n\n\nScatterplot of Maths against Science with hover effects. Colours represent class.\n\n\np2 <- plot_ly(data = exam_data, \n             x = ~MATHS, \n             y = ~SCIENCE,\n        color=~CLASS)\n\n\nBringing it all together (side by side)\n\n\nsubplot(ggplotly(p1),ggplotly(p2))"
+  },
+  {
+    "objectID": "Inclass4.html",
+    "href": "Inclass4.html",
+    "title": "Inclass4",
+    "section": "",
+    "text": "Violin Plot below will compare English scores between class 3E - 3H\n\nexam_plot <- exam %>%\n  filter(CLASS %in% c(\"3E\",\"3F\",\"3G\",\"3H\"))\n\n    ggbetweenstats(data = exam, \n                   x = CLASS, y = ENGLISH, type = \"p\",\n                   mean.ci = TRUE, pairwise.comparisons = TRUE, pairwise.display = \"s\",\n                   p.adjust.method = \"fdr\", messages = FALSE)\n\nWarning: Number of labels is greater than default palette color count.\n• Select another color `palette` (and/or `package`)."
+  },
+  {
+    "objectID": "Inclass4.html#running-code",
+    "href": "Inclass4.html#running-code",
+    "title": "Inclass4",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
   }
 ]
